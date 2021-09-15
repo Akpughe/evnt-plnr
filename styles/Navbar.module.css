@@ -1,0 +1,19 @@
+.icon_container {
+  font-size: 16px;
+  color: white;
+  margin: 0 5px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  margin-left: 16px;
+  font-size: 16px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  margin: 11px 0 6px 22px;
+}
