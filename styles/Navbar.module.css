@@ -7,6 +7,7 @@
 .nav {
   display: flex;
   align-items: center;
+  margin-right: 0 !important;
 }
 
 .heading {
@@ -16,4 +17,15 @@
   font-weight: 700 !important;
   white-space: nowrap !important;
   margin: 11px 0 6px 22px;
+}
+
+.spanH{
+  display: inline;
+  margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .spanH {
+    display: none;
+  }
 }

@@ -4,14 +4,13 @@ import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav >
       <Menu secondary className={styles.nav}>
         {/* left */}
         <div>
           <Menu.Item className={styles.heading}>
             {' '}
             <Header as="h2" inverted color="grey" className={styles.heading}>
-              <Image  src="/logo/icp-logo.svg" /> Intelligent Crazy People
+              <Image  src="/logo/icp-logo.svg" /> <span className={styles.spanH}>Intelligent Crazy People</span> 
             </Header>
           </Menu.Item>
         </div>
@@ -45,7 +44,6 @@ const Navbar = () => {
           </div>
         </Menu.Menu>
       </Menu>
-    </nav>
   );
 };
 

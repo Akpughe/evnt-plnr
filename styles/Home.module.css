@@ -1,11 +1,11 @@
 .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 80px);
   text-align: center;
 }
 
