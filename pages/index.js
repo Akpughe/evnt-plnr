@@ -1,10 +1,18 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
+import Signup from '../components/Signup';
+import Login from '../components/Login';
+import Forgot from '../components/Forgot';
 import styles from '../styles/Home.module.css';
 import { Button } from 'semantic-ui-react';
+import { useState } from 'react';
 
 export default function Home() {
+  const [show, setShow] = useState('');
+  const handleShow = (str) => {
+    setShow(str);
+  };
   return (
     <>
       <Head>
@@ -28,12 +36,33 @@ export default function Home() {
             </h2>
           </div>
           {/* 2 */}
-          <div className={styles.wrap}>
-            <div className={styles.button_wrap}>
-              <Button className={styles.button} content="apply" primary />
-              <Button className={styles.button} content="login" landing-secondary />
+          {show === '' ? (
+            <div className={styles.wrap}>
+              <div className={styles.button_wrap}>
+                <Button
+                  onClick={() => handleShow('Signup')}
+                  className={styles.button}
+                  content="apply"
+                  primary
+                />
+                <Button
+                  onClick={() => handleShow('Login')}
+                  className={styles.button}
+                  content="login"
+                  landing-secondary
+                />
+              </div>
             </div>
-          </div>
+          ) : show === 'Signup' ? (
+            <Signup openL={() => handleShow('Login')} />
+          ) : show === 'Login' ? (
+            <Login
+              openS={() => handleShow('Signup')}
+              openF={() => handleShow('Forgot')}
+            />
+          ) : show === 'Forgot' ? (
+            <Forgot openS={() => handleShow('Signup')} />
+          ) : null}
         </div>
       </div>
     </>
