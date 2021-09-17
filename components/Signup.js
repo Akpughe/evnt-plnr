@@ -4,6 +4,7 @@ import istyles from '../styles/Input.module.css';
 import { Input, Form, Button } from 'semantic-ui-react';
 import { useState, useContext } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 import { AuthContext } from '../utils/authContext';
 
 const Signup = ({ openL }) => {
@@ -13,7 +14,13 @@ const Signup = ({ openL }) => {
     email: '',
     password: '',
   });
+  const [rememberMe, setRememberMe] = useState(true);
+  const [reg, setReg] = useState(true);
+
   const { fullname, email, password } = formData;
+
+  const router = useRouter();
+
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -24,9 +31,12 @@ const Signup = ({ openL }) => {
         ...formData,
       })
       .then((res) => {
-        signup(res.data);
-        console.log(res.data);
-        alert('Done');
+        signup(res.data, rememberMe, reg);
+        setReg();
+        setRememberMe();
+        // console.log(res.data);
+        // alert('Done');
+        return router.push(`/onboarding/2`);
       })
       .catch((err) => {
         console.log(err);
