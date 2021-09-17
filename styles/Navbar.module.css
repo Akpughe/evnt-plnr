@@ -10,6 +10,13 @@
   margin-right: 0 !important;
 }
 
+.nav_2{
+  display: flex;
+  align-items: center;
+  margin-right: 0 !important;
+  background: #253b54 !important;
+}
+
 .heading {
   margin-left: 16px;
   font-size: 16px !important;
