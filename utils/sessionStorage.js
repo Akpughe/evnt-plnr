@@ -1,8 +1,8 @@
-const sessionStorageKey = 'x-auth-token';
+const sessionStorageKey = 'ICP';
 
 export const getUserFromSession = () => {
   try {
-    const serializedUser = sessionStorage.getItem(localStorage.token);
+    const serializedUser = sessionStorage.getItem(sessionStorageKey);
     if (serializedUser === null) {
       return undefined;
     }
@@ -15,7 +15,7 @@ export const getUserFromSession = () => {
 export const saveUserToSession = (user) => {
   try {
     const serializedUser = JSON.stringify(user);
-    sessionStorage.setItem(localStorage.token, serializedUser);
+    sessionStorage.setItem(sessionStorageKey, serializedUser);
   } catch (e) {
     throw new Error('Could not save user object to session storage');
   }
@@ -23,7 +23,7 @@ export const saveUserToSession = (user) => {
 
 export const clearSessionState = () => {
   try {
-    sessionStorage.removeItem(localStorage.token);
+    sessionStorage.removeItem(sessionStorageKey);
   } catch (e) {
     throw new Error('Could not delete user object from session storage');
   }
