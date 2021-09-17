@@ -4,7 +4,7 @@ import { AuthContext } from '../utils/authContext';
 import { Input, Form, Button } from 'semantic-ui-react';
 import styles from '../styles/Home.module.css';
 import istyles from '../styles/Input.module.css';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import axios from 'axios';
 import ChangePassword from '../components/ChangePassword';
 const setting = () => {
@@ -34,8 +34,8 @@ const setting = () => {
       .put(`${process.env.NEXT_PUBLIC_BASE_URL}/user/edit`, {
         ...formData,
         headers: {
-            'x-auth-token': `${token}`,
-          },
+          'x-auth-token': `${token}`,
+        },
       })
       .then((res) => {
         res.data;
@@ -62,11 +62,10 @@ const setting = () => {
                 </label>
                 <input
                   name="fullname"
-                  value={fullname}
+                  value={user.user.fullname || fullname}
                   onChange={(e) => onChange(e)}
                   className={istyles.input}
                   placeholder=""
-                  
                 />
               </Form.Field>
               <Form.Field className={istyles.ffield}>
@@ -75,11 +74,10 @@ const setting = () => {
                 </label>
                 <input
                   name="email"
-                  value={email}
+                  value={email || user.user.email}
                   onChange={(e) => onChange(e)}
                   className={istyles.input}
                   placeholder=""
-                  
                 />
               </Form.Field>
               <Form.Field className={istyles.ffield}>
@@ -88,11 +86,10 @@ const setting = () => {
                 </label>
                 <input
                   name="digits"
-                  value={digits}
+                  value={digits || user.user.digits}
                   onChange={(e) => onChange(e)}
                   className={istyles.input}
                   placeholder=""
-                  
                 />
               </Form.Field>
               <Form.Field className={istyles.ffield}>
@@ -106,6 +103,7 @@ const setting = () => {
                   className={istyles.input}
                   placeholder=""
                   required
+                  type="password"
                 />
               </Form.Field>
               <Button
@@ -117,7 +115,7 @@ const setting = () => {
             </form>
           </div>
         </div>
-      <ChangePassword/>
+        <ChangePassword />
       </div>
     </>
   );
