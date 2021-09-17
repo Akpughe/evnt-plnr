@@ -17,7 +17,7 @@ export const saveUser = (user) => {
   try {
     const serializedUser = JSON.stringify(user);
     setAuthToken(localStorage.token)
-    // localStorage.setItem(localStorageKey, serializedUser);
+    localStorage.setItem(localStorage.token, serializedUser);
   } catch (e) {
     throw new Error('Could not save user object to local storage');
   }

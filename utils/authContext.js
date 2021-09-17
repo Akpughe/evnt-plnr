@@ -43,9 +43,15 @@ export const AuthProvider = ({ children }) => {
     setUser({ ...data, rememberMe: rememberMe });
   };
 
-  const signup = (data) => {
-    setUser({...data})
-  } 
+  const signup = (data, rememberMe, reg) => {
+    if (rememberMe, reg) {
+      saveUser({ ...data, rememberMe: rememberMe });
+    } else {
+      saveUserToSession({ ...data, rememberMe: rememberMe });
+    }
+    // setIsLoggedIn(true);
+    setUser({ ...data, rememberMe: rememberMe, reg: reg });
+  };
 
   const logout = async () => {
     await Router.push('/');
@@ -63,7 +69,15 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ user, login, signup, logout, isLoggedIn, isLoggingOut, setIsLoggingOut }}
+      value={{
+        user,
+        login,
+        signup,
+        logout,
+        isLoggedIn,
+        isLoggingOut,
+        setIsLoggingOut,
+      }}
     >
       {children}
     </AuthContext.Provider>
