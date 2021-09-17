@@ -119,7 +119,7 @@ const Navbar = () => {
               {/* <Link href="/"> */}
               <a
                 onClick={logout}
-                style={{ color: 'white', fontSize: '16px', fontWeight: '500', margin: '0 5px' }}
+                style={{ color: 'white', fontSize: '16px', fontWeight: '500', margin: '0 5px', cursor:'pointer' }}
               >
                 Logout
               </a>
