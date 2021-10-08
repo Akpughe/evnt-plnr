@@ -1,13 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { AuthContext } from '../utils/authContext';
-import { useContext } from 'react';
 import { Icon } from 'semantic-ui-react';
 import styles from '../styles/Home.module.css';
 import istyles from '../styles/Input.module.css';
 
 const faq = () => {
-  const { user } = useContext(AuthContext);
   return (
     <>
       <Navbar />

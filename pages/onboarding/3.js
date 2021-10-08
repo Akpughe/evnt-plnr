@@ -1,15 +1,10 @@
-import React, { useContext, useState } from 'react';
-import { AuthContext } from '../../utils/authContext';
+import React from 'react';
 import Navbar from '../../components/Navbar';
-import { Input, Form, Button } from 'semantic-ui-react';
 import styles from '../../styles/Home.module.css';
 import istyles from '../../styles/Input.module.css';
-import { useRouter } from 'next/router';
-import axios from 'axios';
 import Verify from '../../components/Verify';
+
 const verify = () => {
-  const { user } = useContext(AuthContext);
-//   console.log(user);
   return (
     <>
       <Navbar />

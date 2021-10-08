@@ -1,14 +1,11 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { AuthContext } from '../utils/authContext';
-import { useContext } from 'react';
 import Link from 'next/link';
 import { Icon } from 'semantic-ui-react';
 import styles from '../styles/Home.module.css';
 import istyles from '../styles/Input.module.css';
 
 const home = () => {
-  const { user } = useContext(AuthContext);
   return (
     <>
       <Navbar />
@@ -27,7 +24,6 @@ const home = () => {
               className="airtable-embed"
               src="https://airtable.com/embed/shr9LYCQeUOiMlbHM?backgroundColor=red&layout=card&viewControls=on"
               frameBorder="0"
-              //   onmousewheel=""
               width="100%"
               height="533"
               style={{

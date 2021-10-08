@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react';
-import { AuthContext } from '../../utils/authContext';
+import React from 'react';
 import Navbar from '../../components/Navbar';
 import styles from '../../styles/Home.module.css';
 import istyles from '../../styles/Input.module.css';
@@ -7,8 +6,6 @@ import Phone from '../../components/Phone';
 import Verify from '../../components/Verify';
 
 const phoneVerification = () => {
-  const { user } = useContext(AuthContext);
-//   console.log(user);
   return (
     <>
       <Navbar />
