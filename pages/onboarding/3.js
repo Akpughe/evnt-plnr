@@ -13,7 +13,7 @@ const verify = () => {
         <h2 style={{ fontSize: '30px', fontWeight: '200' }}>
           Create your profile
         </h2>
-        <p>Let's your account secure</p>
+        <p>Let us your account secure</p>
       </div>
       <div className={istyles.bg}>
        <Verify/>

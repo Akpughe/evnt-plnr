@@ -3,7 +3,6 @@ import Navbar from '../../components/Navbar';
 import styles from '../../styles/Home.module.css';
 import istyles from '../../styles/Input.module.css';
 import Phone from '../../components/Phone';
-import Verify from '../../components/Verify';
 
 const phoneVerification = () => {
   return (
@@ -14,7 +13,7 @@ const phoneVerification = () => {
         <h2 style={{ fontSize: '30px', fontWeight: '200' }}>
           Create your profile
         </h2>
-        <p>Let's your account secure</p>
+        <p>Let us your account secure</p>
       </div>
 
         <div className={istyles.bg}>

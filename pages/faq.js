@@ -23,7 +23,7 @@ const faq = () => {
           <h2>What does this Privacy Policy cover?</h2>
           <p>
             This Privacy Policy covers our treatment of personally identifiable
-            information ("Personal Information") that we gather when you are
+            information <b>'Personal Information'</b>  that we gather when you are
             accessing or using our Services, but not to the practices of
             companies we don’t own or control, or people that we don’t manage.
             We gather various types of Personal Information from our members, as
@@ -44,8 +44,8 @@ const faq = () => {
             personal information from a child under age 13, we will delete that
             information as quickly as possible. If you believe that a child
             under 13 may have provided us personal information, please contact
-            us at{' '}
-            <a href="mailto:contact@intcrzyppl.com">contact@intcrzyppl.com</a>.
+            us at
+            <a href="mailto:davidakpughe2@gmail.com">contact@intcrzyppl.com</a>.
           </p>
           <h2>
             Will Intelligent Crazy People ever change this Privacy Policy?
@@ -56,8 +56,8 @@ const faq = () => {
             alert you to changes by updating the services on the website,
             placing a notice on the Services, by sending you a notification
             within any email, and/or by some other means. Please note that if
-            you’ve opted not to receive legal notice emails from us (or you
-            haven’t provided us with your email address), those legal notices
+            you’ve opted not to receive legal notice emails from us <b>or you
+            haven’t provided us with your email address</b>, those legal notices
             will still govern your use of the Services, and you are still
             responsible for reading and understanding them. If you use the
             Services after any changes to the Privacy Policy have been posted,
@@ -72,13 +72,13 @@ const faq = () => {
             well as public information about members of our communities. For
             example, through the registration process and/or through your
             account settings, we may collect Personal Information such as your
-            name, email address and third-party account credentials (for
-            example, your Facebook credentials). If you provide your third-party
+            name, email address and third-party account credentials <b>for
+            example, your Facebook credentials</b>. If you provide your third-party
             account credentials to us or otherwise sign in to the Services
             through a third party site or service, you understand some content
-            and/or information in those accounts (“Third Party Account
-            Information”) may be transmitted into your account with us if you
-            authorize such transmissions], and that Third Party Account
+            and/or information in those accounts <b>“Third Party Account
+            Information”</b> may be transmitted into your account with us if you
+            authorize such transmissions, and that Third Party Account
             Information transmitted to our Services is covered by this Privacy
             Policy. Certain information may be required to register with us or
             to take advantage of some of our features.
@@ -91,8 +91,8 @@ const faq = () => {
             confirmation when you open an email from us. This confirmation helps
             us make our communications with you more interesting and improve our
             services. If you do not want to receive communications from us,
-            please email us at{' '}
-            <a href="mailto:contact@intcrzyppl.com">contact@intcrzyppl.com</a>.
+            please email us at
+            <a href="mailto:davidakpughe2@gmail.com">contact@intcrzyppl.com</a>.
           </p>
           <h2>Information Collected Automatically</h2>
           <p>
@@ -144,8 +144,8 @@ const faq = () => {
           <p>
             Affiliated Businesses: In certain situations, businesses or third
             party websites we’re affiliated with may sell or provide products or
-            services to you through or in connection with the Services (either
-            alone or jointly with us). You can recognize when an affiliated
+            services to you through or in connection with the Services <b>either
+            alone or jointly with us</b>. You can recognize when an affiliated
             business is associated with such a transaction or service, and we
             will share your Personal Information with that affiliated business
             only to the extent that it is related to such transaction or
@@ -177,8 +177,8 @@ const faq = () => {
           <p>
             Business Transfers: We may choose to buy or sell assets. In these
             types of transactions, member information is typically one of the
-            business assets that would be transferred. Also, if we (or our
-            assets) are acquired, or if we cease operation or go through some
+            business assets that would be transferred. Also, if we <b>or our
+            assets</b> are acquired, or if we cease operation or go through some
             other change of control, Personal Information could be one of the
             assets transferred to or acquired by a third party.
           </p>
@@ -222,15 +222,15 @@ const faq = () => {
             <li>profile headline</li>
             <li>website</li>
             <li>
-              external accounts (facebook, twitter, dribbble, github, instagram)
+              external accounts <b>facebook, twitter, dribbble, github, instagram</b>
             </li>
             <li>profile photo</li>
           </ul>
           <p>
             The information you can view, update, and delete may change as the
             Services change. If you have any questions about viewing or updating
-            information we have on file about you, please contact us at{' '}
-            <a href="mailto:contact@intcrzyppl.com">contact@intcrzyppl.com</a>.
+            information we have on file about you, please contact us at
+            <a href="mailto:davidakpughe2@gmail.com">contact@intcrzyppl.com</a>.
           </p>
           <h2>What choices do I have?</h2>
           <p>
@@ -242,8 +242,8 @@ const faq = () => {
             You may be able to add, update, or delete information as explained
             above. When you update information, however, we may maintain a copy
             of the unrevised information in our records. You may request
-            deletion of your account by contacting us at{' '}
-            <a href="mailto:contact@intcrzyppl.com">contact@intcrzyppl.com</a>{' '}
+            deletion of your account by contacting us at
+            <a href="mailto:davidakpughe2@gmail.com">contact@intcrzyppl.com</a>
             and we will disassociate your email address and Facebook account
             from any content or other information provided to us. Some
             information may remain in our records after your deletion of such
@@ -255,8 +255,8 @@ const faq = () => {
           <h2>What if I have questions about this policy?</h2>
           <p>
             If you have any questions or concerns regarding our Privacy Policy,
-            please send us a detailed message to{' '}
-            <a href="mailto:contact@intcrzyppl.com">contact@intcrzyppl.com</a>,
+            please send us a detailed message to
+            <a href="mailto:davidakpughe2@gmail.com">contact@intcrzyppl.com</a>,
             and we will try to resolve your concerns.
           </p>
         </div>
