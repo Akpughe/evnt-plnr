@@ -16,7 +16,7 @@ const Navbar = () => {
             <Menu.Item className={styles.heading}>
               {' '}
               <Header as="h2" inverted color="grey" className={styles.heading}>
-                <Image src="/logo/icp-logo.svg" />{' '}
+                <Image alt="logo" src="/logo/icp-logo.svg" />{' '}
                 <span className={styles.spanH}>Intelligent Crazy People</span>
               </Header>
             </Menu.Item>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <Menu.Item className={styles.heading}>
               {' '}
               <Header as="h2" inverted color="grey" className={styles.heading}>
-                <Image src="/logo/icp-logo.svg" />{' '}
+                <Image alt="logo" src="/logo/icp-logo.svg" />{' '}
                 <span className={styles.spanH}>Intelligent Crazy People</span>
               </Header>
             </Menu.Item>
@@ -84,7 +84,7 @@ const Navbar = () => {
             <Menu.Item className={styles.heading}>
               {' '}
               <Header as="h2" inverted color="grey" className={styles.heading}>
-                <Image src="/logo/icp-logo.svg" />{' '}
+                <Image alt="logo" src="/logo/icp-logo.svg" />{' '}
                 <span className={styles.spanH}>Intelligent Crazy People</span>
               </Header>
             </Menu.Item>
