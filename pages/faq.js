@@ -23,7 +23,7 @@ const faq = () => {
           <h2>What does this Privacy Policy cover?</h2>
           <p>
             This Privacy Policy covers our treatment of personally identifiable
-            information <b>'Personal Information'</b>  that we gather when you are
+            information <b>Personal Information</b>  that we gather when you are
             accessing or using our Services, but not to the practices of
             companies we don’t own or control, or people that we don’t manage.
             We gather various types of Personal Information from our members, as
